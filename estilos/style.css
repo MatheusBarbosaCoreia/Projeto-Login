@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    background-image: linear-gradient(to bottom,#5f2c82,#49a09d);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#login{
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    
+    width: 730px;
+    height: 250px;
+    
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+div#imagen{
+    flex: 2;
+    height: 100%;
+    background-size: cover;
+}
+div#imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px 0px 0px 10px;
+}
+div#formulario{
+    flex: 3;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p#margen{
+    background-color: #5f2c82;
+    border-radius: 8px;
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+}
+p#margen label img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: invert(100%);
+}
+p#margen input{
+    flex-grow: 1; 
+    outline: none;
+    padding-left: 5px;
+    height: 30px;
+    outline: none;
+    border-radius: 6px;
+}
+input#mais{
+    border-radius: 6px;
+    margin: 4px 0;
+    width: 100%;
+    height: 30px;
+    color: #49a09d;
+    border-color: #49a09d;
+    border: 1px solid #49a09d;
+}
+input#mais1{
+    border-radius: 6px;
+    height: 30px;
+    width: 100%;
+    color: white;
+    border: 1px solid #49a09d;
+    background-color: #49a09d;
+}
+#margen{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+input:hover, input#mais:hover, input#mais1:hover{
+    background-color: #6cd3cf;
+    color: rgb(0, 0, 0);
+}
+/*Celular*/
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    section#login{
+    flex-direction: column;
+    
+    width: 300px;
+    height: 500px;
+    
+}  
+}
+
+/*Tablet*/
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    section#login{
+    flex-direction:  row-reverse;
+    
+    width: 600px;
+    height: 260px;
+}
+}

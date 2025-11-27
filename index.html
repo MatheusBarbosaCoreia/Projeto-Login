@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagen">
+                <img src="imagens/pexels-francesco-ungaro-96938.jpg" alt="">
+                
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja Bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="paginas/entrar.html" method="post" autocomplete="on">
+                    <p id="margen">
+                        <label for="iemail"><img src="imagens/do-utilizador.png" alt=""></label>
+
+                        <input type="email" name="email" id="iemail" required placeholder="Email" minlength="5" maxlength="50">
+                    </p>
+                    <p id="margen">
+                        <label for="isenha"><img src="imagens/chave.png" alt=""></label>
+
+                        <input type="password" name="senha" id="isenha" required placeholder="Senha" minlength="8" maxlength="20">
+                    </p>
+                    <input id="mais1" type="submit" value="Entrar">
+
+                    <br>
+                    <input id="mais" type="button" value="Esqueci Senha ✉" onclick="window.open('paginas/esqueci.html','_self')">
+                
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
